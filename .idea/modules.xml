@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://F://TowerOfKnowledge/TowerOfKnowledge.iml" filepath="F://TowerOfKnowledge/TowerOfKnowledge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TowerOfKnowledge.iml" filepath="$PROJECT_DIR$/TowerOfKnowledge.iml" />
     </modules>
   </component>
 </project>

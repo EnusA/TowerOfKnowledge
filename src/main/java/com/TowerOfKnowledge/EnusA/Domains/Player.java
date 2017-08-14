@@ -8,10 +8,7 @@ public class Player {
     private String username;
     private String password;
     private String email;
-    private int level;
-    private int strength;
-    private int intelligence;
-    private int defence;
+    private int rank;
     private Player(){}
 
 
@@ -19,20 +16,14 @@ public class Player {
     public String getUsername() {return username;}
     public String getPassword() {return password;}
     public String getEmail() {return email;}
-    public int getLevel() {return level;}
-    public int getStrength() {return strength;}
-    public int getIntelligence() {return intelligence;}
-    public int getDefence() {return defence;}
+    public int getrank() {return rank;}
 
     public Player(Builder builder){
         this.fullName = builder.fullName;
         this.username = builder.username;
         this.password = builder.password;
         this.email = builder.email;
-        this.level = builder.level;
-        this.strength = builder.strength;
-        this.intelligence = builder.intelligence;
-        this.defence = builder.defence;
+        this.rank = builder.rank;
     }
 
     public static class Builder{
@@ -40,10 +31,8 @@ public class Player {
         private String username;
         private String password;
         private String email;
-        private int level;
-        private int strength;
-        private int intelligence;
-        private int defence;
+        private int rank;
+
         public Builder fullName(String value){
             this.fullName = value;
             return this;
@@ -60,24 +49,10 @@ public class Player {
             this.email = value;
             return this;
         }
-        public Builder level(int value){
-            this.level = value;
+        public Builder rank(int value){
+            this.rank = value;
             return this;
         }
-        public Builder strength(int value){
-            this.strength = value;
-            return this;
-        }
-        public Builder intelligence(int value){
-            this.intelligence = value;
-            return this;
-        }
-        public Builder defence(int value){
-            this.defence = value;
-            return this;
-        }
-
-
 
         public Player builder(){return new Player(this);}
     }

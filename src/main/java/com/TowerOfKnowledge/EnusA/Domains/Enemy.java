@@ -65,7 +65,7 @@ public class Enemy {
             this.enemyId = value;
             return this;
         }
-        public Builder attacks(String value){
+        public Builder attack(String value){
             this.attack = value;
             return this;
         }
